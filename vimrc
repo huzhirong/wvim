@@ -72,6 +72,7 @@ map <leader>sc: SCROLL
 let g:user_zen_expandabbr_key = '<c-j>'
 let g:use_zen_complete_tag = 1
 
+"vimwiki插件
 nmap <F3> :Vimwiki2HTML<cr> "把当前wiki文件生成html                                                                                                      
 nmap <F4> :VimwikiAll2HTML<cr> "把所有wiki文件生成html
 let g:vimwiki_camel_case = 0 "不要将驼峰式词组作为Wiki词条
