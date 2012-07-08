@@ -66,7 +66,7 @@ let g:winManagerWindowLayout='FileExplorer|TagList'
 map <leader>co :ColorSchemeExplorer<CR> ",co选择背景颜色
 
 "ScrollColors插件
-map <leader>sc: SCROLL
+map <leader>sc :SCROLL
 
 "zencoding插件
 let g:user_zen_expandabbr_key = '<c-j>'
