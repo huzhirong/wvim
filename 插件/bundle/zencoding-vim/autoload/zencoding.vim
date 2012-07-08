@@ -1115,6 +1115,11 @@ let s:zen_settings = {
 \                    ."<head>\n"
 \                    ."    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=${charset}\" />\n"
 \                    ."    <title></title>\n"
+\                    ."    <meta name=\"keywords\" content=\"\" />\n"
+\                    ."    <meta name=\"description\" content=\"\" />\n"
+\                    ."    <meta name=\"robots\" content=\"all\" />\n"
+\                    ."    <link rel=\"Shortcut Icon\" href=\"/favicon.ico\" type=\"image/x-icon\" />\n"
+\                    ."    <link rel=\"Bookmark\" href=\"/favicon.ico\" type=\"image/x-icon\" />\n"
 \                    ."</head>\n"
 \                    ."<body>\n\t${child}|\n</body>\n"
 \                    ."</html>",
