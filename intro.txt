@@ -15,6 +15,8 @@
   h.vim-autocomplpop插件(http://www.vim.org/scripts/script.php?script_id=1879)
   i.cssbaseline.vim插件(http://www.vim.org/scripts/script.php?script_id=3697),记得到 (http://www.paehl.com/open_source/?CURL_7.25.0),选择 Download WITHOUT SSL,解压到某个盘符,设置好path路径，在命令行下输入 :Baseline
   j.zencoding插件(http://www.vim.org/scripts/script.php?script_id=2981)
+  k.JsLint Helper插件(http://www.vim.org/scripts/script.php?script_id=3174)，到(http://www.javascriptlint.com/download.htm)下载jsl，配置好环境变量，如果可以在命令行下输入jsl，如果有东西输出就是安装成功了
+
 
 vimrc的所有内容：
 
