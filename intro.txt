@@ -21,6 +21,7 @@
     2.jsoncodecs插件(http://www.vim.org/scripts/script.php?script_id=4056)，只要把下载的plugin目录下的所有文件都放到vim的plugin文件夹里就行了
     3.安装jsflakes插件，把下载的ftplugin文件夹里的javascript文件夹放到vimfiles\ftplugin这里去就可以了
   m.The NERD Commenter插件(http://www.vim.org/scripts/script.php?script_id=1218)
+  n.snipMate插件(http://www.vim.org/scripts/script.php?script_id=2540)
 
 vimrc的所有内容：
 
