@@ -23,6 +23,7 @@
   m.The NERD Commenter插件(http://www.vim.org/scripts/script.php?script_id=1218)
   n.snipMate插件(http://www.vim.org/scripts/script.php?script_id=2540)
   o.matchit插件(http://www.vim.org/scripts/script.php?script_id=39)
+  p.MatchTag插件(http://www.vim.org/scripts/script.php?script_id=3818)，把下载的html.vim放到vimfiles\ftplugin这里去就可以了
 
 vimrc的所有内容：
 
