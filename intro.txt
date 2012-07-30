@@ -1,71 +1,71 @@
-1.°²×°ºÃgvim£¬ÔÚwindowsÏÂÄ¬ÈÏ°²×°µÄÂ·¾¶ÊÇC:\Program Files\Vim\Ä¿Â¼ÏÂ
+1.å®‰è£…å¥½gvimï¼Œåœ¨windowsä¸‹é»˜è®¤å®‰è£…çš„è·¯å¾„æ˜¯C:\Program Files\Vim\ç›®å½•ä¸‹
 
-2.µ½ http://www.vim.org/scripts/script.php?script_id=2332 ÏÂÔØ×îĞÂµÄ pathogen.vim²å¼ş, °Ñ pathogen.vim·Åµ½ C:\Program Files\Vim\vimfiles\autoload\ Ä¿Â¼ÏÂ,
-Ìí¼ÓÕâÌõÓï¾äµ½ vimrcÎÄ¼şÀï(ÔÚwindowsÏÂ¿ÉÒÔÓÃ e $vim/_vimrc´ò¿ª),call pathogen#infect() £¬
+2.åˆ° http://www.vim.org/scripts/script.php?script_id=2332 ä¸‹è½½æœ€æ–°çš„ pathogen.vimæ’ä»¶, æŠŠ pathogen.vimæ”¾åˆ° C:\Program Files\Vim\vimfiles\autoload\ ç›®å½•ä¸‹,
+æ·»åŠ è¿™æ¡è¯­å¥åˆ° vimrcæ–‡ä»¶é‡Œ(åœ¨windowsä¸‹å¯ä»¥ç”¨ e $vim/_vimrcæ‰“å¼€),call pathogen#infect() ï¼Œ
 
-3.°ÑÏÂÃæËùÓĞ²å¼şµÄÎÄ¼ş¼Ğ·Åµ½vimfiles\bundleÎÄ¼ş¼ĞÀï£¨Èç¹ûÃ»ÓĞbundleÎÄ¼ş¼Ğ×Ô¼º½¨Á¢£©
+3.æŠŠä¸‹é¢æ‰€æœ‰æ’ä»¶çš„æ–‡ä»¶å¤¹æ”¾åˆ°vimfiles\bundleæ–‡ä»¶å¤¹é‡Œï¼ˆå¦‚æœæ²¡æœ‰bundleæ–‡ä»¶å¤¹è‡ªå·±å»ºç«‹ï¼‰
   
-  a.NERD_tree²å¼ş(http://www.vim.org/scripts/script.php?script_id=1658)
-  b."bufexplorer²å¼ş(http://www.vim.org/scripts/script.php?script_id=42)
-  c.winmanager²å¼ş(http://www.vim.org/scripts/script.php?script_id=95)
-  d.taglist²å¼ş(http://www.vim.org/scripts/script.php?script_id=273)£¬¼ÇµÃÒª°Ñctags58·Åµ½cÅÌºÍÉèÖÃÂ·¾¶
-  e.Color Scheme Explorerr²å¼ş(http://www.vim.org/scripts/script.php?script_id=1298)
-  f.ColorSamplerPack²å¼ş(http://www.vim.org/scripts/script.php?script_id=625)
-  g.ScrollColors²å¼ş(http://www.vim.org/scripts/script.php?script_id=1488),°ÑScrollColor.vim·Åµ½pluginÎÄ¼ş¼ĞÀï
-  h.vim-autocomplpop²å¼ş(http://www.vim.org/scripts/script.php?script_id=1879)
-  i.cssbaseline.vim²å¼ş(http://www.vim.org/scripts/script.php?script_id=3697),¼ÇµÃµ½ (http://www.paehl.com/open_source/?CURL_7.25.0),Ñ¡Ôñ Download WITHOUT SSL,½âÑ¹µ½Ä³¸öÅÌ·û,ÉèÖÃºÃpathÂ·¾¶£¬ÔÚÃüÁîĞĞÏÂÊäÈë :Baseline
-  j.zencoding²å¼ş(http://www.vim.org/scripts/script.php?script_id=2981)
-  k.JsLint Helper²å¼ş(http://www.vim.org/scripts/script.php?script_id=3174)£¬µ½(http://www.javascriptlint.com/download.htm)ÏÂÔØjsl£¬ÅäÖÃºÃ»·¾³±äÁ¿£¬Èç¹û¿ÉÒÔÔÚÃüÁîĞĞÏÂÊäÈëjsl£¬Èç¹ûÓĞ¶«Î÷Êä³ö¾ÍÊÇ°²×°³É¹¦ÁË
-  l.jsflakes²å¼ş(http://www.vim.org/scripts/script.php?script_id=4057)£¬Òª°²×°Õâ¸ö²å¼ş£¬ÏÈÒª°²×°Á½¸ö²å¼ş£¬ÕâÁ½¸ö²å¼şÊÇ£º
-    1.jsruntime²å¼ş(https://github.com/michalliu/jsruntime.vim)£¬Ö»Òª°ÑÏÂÔØµÄpluginÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼ş¶¼·Åµ½vimµÄpluginÎÄ¼ş¼ĞÀï¾ÍĞĞÁË£¬¿ÉÒÔÔÚÃüÁîÄ£Ê½ÏÂÊäÈë:echo b:jsruntimeEvalScript('1+2')£¬Èç¹ûÊä³ö3£¬ËµÃ÷³É¹¦ÁË
-    2.jsoncodecs²å¼ş(http://www.vim.org/scripts/script.php?script_id=4056)£¬Ö»Òª°ÑÏÂÔØµÄpluginÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼ş¶¼·Åµ½vimµÄpluginÎÄ¼ş¼ĞÀï¾ÍĞĞÁË
-    3.°²×°jsflakes²å¼ş£¬°ÑÏÂÔØµÄftpluginÎÄ¼ş¼ĞÀïµÄjavascriptÎÄ¼ş¼Ğ·Åµ½vimfiles\ftpluginÕâÀïÈ¥¾Í¿ÉÒÔÁË
-  m.The NERD Commenter²å¼ş(http://www.vim.org/scripts/script.php?script_id=1218)
-  n.snipMate²å¼ş(http://www.vim.org/scripts/script.php?script_id=2540)
-  o.matchit²å¼ş(http://www.vim.org/scripts/script.php?script_id=39)
-  p.MatchTag²å¼ş(http://www.vim.org/scripts/script.php?script_id=3818)£¬°ÑÏÂÔØµÄhtml.vim·Åµ½vimfiles\ftpluginÕâÀïÈ¥¾Í¿ÉÒÔÁË
-  q.surround²å¼ş(http://www.vim.org/scripts/script.php?script_id=1697)
-  r.visualmark²å¼ş(http://www.vim.org/scripts/script.php?script_id=1026)£¬°Ñvisualmark.vim·Åµ½pluginÎÄ¼ş¼ĞÀï
+  a.NERD_treeæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1658)
+  b."bufexploreræ’ä»¶(http://www.vim.org/scripts/script.php?script_id=42)
+  c.winmanageræ’ä»¶(http://www.vim.org/scripts/script.php?script_id=95)
+  d.taglistæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=273)ï¼Œè®°å¾—è¦æŠŠctags58æ”¾åˆ°cç›˜å’Œè®¾ç½®è·¯å¾„
+  e.Color Scheme Explorerræ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1298)
+  f.ColorSamplerPackæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=625)
+  g.ScrollColorsæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1488),æŠŠScrollColor.vimæ”¾åˆ°pluginæ–‡ä»¶å¤¹é‡Œ
+  h.vim-autocomplpopæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1879)
+  i.cssbaseline.vimæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=3697),è®°å¾—åˆ° (http://www.paehl.com/open_source/?CURL_7.25.0),é€‰æ‹© Download WITHOUT SSL,è§£å‹åˆ°æŸä¸ªç›˜ç¬¦,è®¾ç½®å¥½pathè·¯å¾„ï¼Œåœ¨å‘½ä»¤è¡Œä¸‹è¾“å…¥ :Baseline
+  j.zencodingæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=2981)
+  k.JsLint Helperæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=3174)ï¼Œåˆ°(http://www.javascriptlint.com/download.htm)ä¸‹è½½jslï¼Œé…ç½®å¥½ç¯å¢ƒå˜é‡ï¼Œå¦‚æœå¯ä»¥åœ¨å‘½ä»¤è¡Œä¸‹è¾“å…¥jslï¼Œå¦‚æœæœ‰ä¸œè¥¿è¾“å‡ºå°±æ˜¯å®‰è£…æˆåŠŸäº†
+  l.jsflakesæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=4057)ï¼Œè¦å®‰è£…è¿™ä¸ªæ’ä»¶ï¼Œå…ˆè¦å®‰è£…ä¸¤ä¸ªæ’ä»¶ï¼Œè¿™ä¸¤ä¸ªæ’ä»¶æ˜¯ï¼š
+    1.jsruntimeæ’ä»¶(https://github.com/michalliu/jsruntime.vim)ï¼Œåªè¦æŠŠä¸‹è½½çš„pluginç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶éƒ½æ”¾åˆ°vimçš„pluginæ–‡ä»¶å¤¹é‡Œå°±è¡Œäº†ï¼Œå¯ä»¥åœ¨å‘½ä»¤æ¨¡å¼ä¸‹è¾“å…¥:echo b:jsruntimeEvalScript('1+2')ï¼Œå¦‚æœè¾“å‡º3ï¼Œè¯´æ˜æˆåŠŸäº†
+    2.jsoncodecsæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=4056)ï¼Œåªè¦æŠŠä¸‹è½½çš„pluginç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶éƒ½æ”¾åˆ°vimçš„pluginæ–‡ä»¶å¤¹é‡Œå°±è¡Œäº†
+    3.å®‰è£…jsflakesæ’ä»¶ï¼ŒæŠŠä¸‹è½½çš„ftpluginæ–‡ä»¶å¤¹é‡Œçš„javascriptæ–‡ä»¶å¤¹æ”¾åˆ°vimfiles\ftpluginè¿™é‡Œå»å°±å¯ä»¥äº†
+  m.The NERD Commenteræ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1218)
+  n.snipMateæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=2540)
+  o.matchitæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=39)
+  p.MatchTagæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=3818)ï¼ŒæŠŠä¸‹è½½çš„html.vimæ”¾åˆ°vimfiles\ftpluginè¿™é‡Œå»å°±å¯ä»¥äº†
+  q.surroundæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1697)
+  r.visualmarkæ’ä»¶(http://www.vim.org/scripts/script.php?script_id=1026)ï¼ŒæŠŠvisualmark.vimæ”¾åˆ°pluginæ–‡ä»¶å¤¹é‡Œ
 
-vimrcµÄËùÓĞÄÚÈİ£º
+vimrcçš„æ‰€æœ‰å†…å®¹ï¼š
 
-"basicÅäÖÃ
-set go= "ÉèÖÃÃ»ÓĞGUI½çÃæ
-set number "ÏÔÊ¾ĞĞºÅ
-set autoindent "Ê¹ÓÃ¶ÔÆë¸ñÊ½£¬Ò²¾ÍÊÇ°Ñµ±Ç°ĞĞµÄµÄ¶ÔÆë¸ñÊ½Ó¦¸Ãµ½ÏÂÒ»ĞĞ¡£
-set smartindent "ÒÀ¾İÉÏÃæµÄ¶ÔÆë¸ñÊ½£¬ÖÇÄÜµÄÑ¡Ôñ¶ÔÆë·½Ê½¡£
-set tabstop=4 "ÉèÖÃtab¼üÎª4¸ö¿Õ¸ñ¡£
-set shiftwidth=4 "ÉèÖÃµ±ĞĞÖ®¼ä½»´íÊ±Ê¹ÓÃ4¸ö¿Õ¸ñ¡£
-set ruler "ÉèÖÃÔÚ±à¼­¹ı³ÌÖĞ£¬ÔÚÓÒÏÂ½ÇÏÔÊ¾¹â±êÎ»ÖÃµÄ×´Ì¬ĞĞ¡£
-set showmatch "¸ßÁÁÏÔÊ¾Æ¥ÅäµÄÀ¨ºÅ¡£
-syntax enable "¿ªÆôÓï·¨
-syntax on "¸ßÁÁÓï·¨
-set nobackup "ÉèÖÃÃ»ÓĞ±¸·İÎÄ¼ş¡£
-set noswapfile "ÉèÖÃÃ»ÓĞ½»»»ÎÄ¼ş¡£
-set hlsearch " ²éÕÒ½á¹û¸ßÁÁ¶ÈÏÔÊ¾
+"basicé…ç½®
+set go= "è®¾ç½®æ²¡æœ‰GUIç•Œé¢
+set number "æ˜¾ç¤ºè¡Œå·
+set autoindent "ä½¿ç”¨å¯¹é½æ ¼å¼ï¼Œä¹Ÿå°±æ˜¯æŠŠå½“å‰è¡Œçš„çš„å¯¹é½æ ¼å¼åº”è¯¥åˆ°ä¸‹ä¸€è¡Œã€‚
+set smartindent "ä¾æ®ä¸Šé¢çš„å¯¹é½æ ¼å¼ï¼Œæ™ºèƒ½çš„é€‰æ‹©å¯¹é½æ–¹å¼ã€‚
+set tabstop=4 "è®¾ç½®tabé”®ä¸º4ä¸ªç©ºæ ¼ã€‚
+set shiftwidth=4 "è®¾ç½®å½“è¡Œä¹‹é—´äº¤é”™æ—¶ä½¿ç”¨4ä¸ªç©ºæ ¼ã€‚
+set ruler "è®¾ç½®åœ¨ç¼–è¾‘è¿‡ç¨‹ä¸­ï¼Œåœ¨å³ä¸‹è§’æ˜¾ç¤ºå…‰æ ‡ä½ç½®çš„çŠ¶æ€è¡Œã€‚
+set showmatch "é«˜äº®æ˜¾ç¤ºåŒ¹é…çš„æ‹¬å·ã€‚
+syntax enable "å¼€å¯è¯­æ³•
+syntax on "é«˜äº®è¯­æ³•
+set nobackup "è®¾ç½®æ²¡æœ‰å¤‡ä»½æ–‡ä»¶ã€‚
+set noswapfile "è®¾ç½®æ²¡æœ‰äº¤æ¢æ–‡ä»¶ã€‚
+set hlsearch " æŸ¥æ‰¾ç»“æœé«˜äº®åº¦æ˜¾ç¤º
 set incsearch
 "imap { {<CR>}<ESC>O
-set cursorline "¸ßÁÁµ±Ç°ĞĞ
-set cursorcolumn "¸ßÁÁµ±Ç°ÁĞ
+set cursorline "é«˜äº®å½“å‰è¡Œ
+set cursorcolumn "é«˜äº®å½“å‰åˆ—
 set statusline=%h%=%-14.(%l,%c%V%)\ %<%p%%\ \ \ [%L]\ \ \ %{strftime('%y-%m-%d\ %A')}
 "hi CursorLine guibg=#FFFFC0
-set encoding=utf-8 "ÉèÖÃ±àÂë
-set fileencodings=utf-8,gb2312,gbk,gb18030,latin-1 "ÉèÖÃÎÄ¼ş±àÂë
+set encoding=utf-8 "è®¾ç½®ç¼–ç 
+set fileencodings=utf-8,gb2312,gbk,gb18030,latin-1 "è®¾ç½®æ–‡ä»¶ç¼–ç 
 set fileencodings=ucs-bom,utf-8,cp936
 set fileencoding=utf-8
-set encoding=cp936  "Í¬Ê±Ö§³ÖGBKºÍUTF-8±àÂë
+set encoding=cp936  "åŒæ—¶æ”¯æŒGBKå’ŒUTF-8ç¼–ç 
 "colorscheme candy
-colorscheme desert "ÉèÖÃ±³¾°ÑÕÉ«
+colorscheme desert "è®¾ç½®èƒŒæ™¯é¢œè‰²
 "inoremap <tab> <C-x><C-l>
-let g:mapleader = "," "ÉèÖÃÈ«¾Ö¿ì½İ¼üÎª,
+let g:mapleader = "," "è®¾ç½®å…¨å±€å¿«æ·é”®ä¸º,
 imap <leader>e <esc>
-map <leader>q :q!<CR> "ÍË³öÎÄ¼şµÄ¿ì½İ¼üÎª,q"
-map <leader>w :w<CR> "±£´æÎÄ¼şµÄ¿ì½İ¼üÎª,w
+map <leader>q :q!<CR> "é€€å‡ºæ–‡ä»¶çš„å¿«æ·é”®ä¸º,q"
+map <leader>w :w<CR> "ä¿å­˜æ–‡ä»¶çš„å¿«æ·é”®ä¸º,w
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-h> <c-w>h
 map <c-l> <c-w>l
-map <leader>ee :e $vim/_vimrc "ÔÚÎÄ¼şÖĞ±à¼­.vimrcÎÄ¼ş
+map <leader>ee :e $vim/_vimrc "åœ¨æ–‡ä»¶ä¸­ç¼–è¾‘.vimrcæ–‡ä»¶
 filetype indent on
 filetype plugin on
 filetype plugin indent on
@@ -73,39 +73,39 @@ filetype plugin indent on
 "pathogen
 call pathogen#infect()
 
-"NERD_tree²å¼ş
+"NERD_treeæ’ä»¶
 map nt :NERDTreeToggle<CR>
 let NERDTreeWinPos="right"
 
-"winmanager²å¼ş
+"winmanageræ’ä»¶
 nmap wm :WMToggle<cr>
 
-"bufexplorer²å¼ş
+"bufexploreræ’ä»¶
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
-"taglist²å¼ş
+"taglistæ’ä»¶
 let g:Tlist_Use_Right_Window=1
 let g:Tlist_Show_One_File=1
 let g:Tlist_Compact_Format=1
 let Tlist_Exit_OnlyWindow=1
 let g:winManagerWindowLayout='FileExplorer|TagList'
 
-"ColorSchemeExplorer²å¼ş
-map <leader>co :ColorSchemeExplorer<CR> ",coÑ¡Ôñ±³¾°ÑÕÉ«
+"ColorSchemeExploreræ’ä»¶
+map <leader>co :ColorSchemeExplorer<CR> ",coé€‰æ‹©èƒŒæ™¯é¢œè‰²
 
-"ScrollColors²å¼ş
+"ScrollColorsæ’ä»¶
 map <leader>sc :SCROLL
 
-"zencoding²å¼ş
+"zencodingæ’ä»¶
 let g:user_zen_expandabbr_key = '<c-j>'
 let g:use_zen_complete_tag = 1
 
-"vimwiki²å¼ş
-nmap <F3> :Vimwiki2HTML<cr> "°Ñµ±Ç°wikiÎÄ¼şÉú³Éhtml                                                                                                      
-nmap <F4> :VimwikiAll2HTML<cr> "°ÑËùÓĞwikiÎÄ¼şÉú³Éhtml
-let g:vimwiki_camel_case = 0 "²»Òª½«ÍÕ·åÊ½´Ê×é×÷ÎªWiki´ÊÌõ
-let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre' "ÉùÃ÷¿ÉÒÔÔÚwikiÀïÃæÊ¹ÓÃµÄHTML±êÇ©
+"vimwikiæ’ä»¶
+nmap <F3> :Vimwiki2HTML<cr> "æŠŠå½“å‰wikiæ–‡ä»¶ç”Ÿæˆhtml                                                                                                      
+nmap <F4> :VimwikiAll2HTML<cr> "æŠŠæ‰€æœ‰wikiæ–‡ä»¶ç”Ÿæˆhtml
+let g:vimwiki_camel_case = 0 "ä¸è¦å°†é©¼å³°å¼è¯ç»„ä½œä¸ºWikiè¯æ¡
+let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre' "å£°æ˜å¯ä»¥åœ¨wikié‡Œé¢ä½¿ç”¨çš„HTMLæ ‡ç­¾
 let g:vimwiki_list = [{'path': 'E:/vimwiki/', 'path_html': 'E:/vimwiki/html/', 'auto_export': 1,}]
