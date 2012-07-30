@@ -25,6 +25,7 @@
   o.matchit插件(http://www.vim.org/scripts/script.php?script_id=39)
   p.MatchTag插件(http://www.vim.org/scripts/script.php?script_id=3818)，把下载的html.vim放到vimfiles\ftplugin这里去就可以了
   q.surround插件(http://www.vim.org/scripts/script.php?script_id=1697)
+  r.visualmark插件(http://www.vim.org/scripts/script.php?script_id=1026)，把visualmark.vim放到plugin文件夹里
 
 vimrc的所有内容：
 
