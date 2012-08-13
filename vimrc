@@ -45,6 +45,7 @@ call pathogen#infect()
 "NERD_tree插件
 map nt :NERDTreeToggle<CR>
 let NERDTreeWinPos="right"
+let NERDTreeShowBookmarks=1
 
 "winmanager插件
 nmap wm :WMToggle<cr>
