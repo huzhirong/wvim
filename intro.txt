@@ -27,8 +27,6 @@
   q.surround插件(http://www.vim.org/scripts/script.php?script_id=1697)
   r.visualmark插件(http://www.vim.org/scripts/script.php?script_id=1026)，把visualmark.vim放到plugin文件夹里
 
-vimrc的所有内容：
-
 "basic配置
 set go= "设置没有GUI界面
 set number "显示行号
@@ -109,4 +107,6 @@ nmap <F3> :Vimwiki2HTML<cr> "把当前wiki文件生成html
 nmap <F4> :VimwikiAll2HTML<cr> "把所有wiki文件生成html
 let g:vimwiki_camel_case = 0 "不要将驼峰式词组作为Wiki词条
 let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre' "声明可以在wiki里面使用的HTML标签
-let g:vimwiki_list = [{'path': 'E:/vimwiki/', 'path_html': 'E:/vimwiki/html/', 'auto_export': 1,}]
+let g:vimwiki_list = [{'path': 'D:/vimwiki/', 'path_html': 'D:/vimwiki/html/', 'auto_export': 1,}]
+
+let g:acp_behaviorHtmlOmniLength = -1  "html不自动补全
