@@ -108,5 +108,3 @@ nmap <F4> :VimwikiAll2HTML<cr> "把所有wiki文件生成html
 let g:vimwiki_camel_case = 0 "不要将驼峰式词组作为Wiki词条
 let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre' "声明可以在wiki里面使用的HTML标签
 let g:vimwiki_list = [{'path': 'D:/vimwiki/', 'path_html': 'D:/vimwiki/html/', 'auto_export': 1,}]
-
-let g:acp_behaviorHtmlOmniLength = -1  "html不自动补全
