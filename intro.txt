@@ -27,6 +27,7 @@
   q.surround插件(http://www.vim.org/scripts/script.php?script_id=1697)
   r.visualmark插件(http://www.vim.org/scripts/script.php?script_id=1026)，把visualmark.vim放到plugin文件夹里
   s.html_annoyance插件(http://www.vim.org/scripts/script.php?script_id=4192)，主要是用来去除a的连续的空白的
+  t.csspretty插件(https://github.com/hotoo/csspretty.vim)，主要用来把一行css转换为多行css
 
 "basic配置
 set go= "设置没有GUI界面
@@ -110,3 +111,6 @@ let g:vimwiki_camel_case = 0 "不要将驼峰式词组作为Wiki词条
 let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre' "声明可以在wiki里面使用的HTML标签
 let g:vimwiki_list = [{'path': 'D:/vimwiki/wiki_techno/', 'path_html': 'D:/vimwiki/wiki_techno/html/', 'template_path': 'D:/vimwiki/wiki_techno/html/template/', 'template_default': 'default', 'template_ext': '.html', 'auto_export': 1},{'path': 'D:/vimwiki/wiki_literature/', 'path_html': 'D:/vimwiki/wiki_literature/html/', 'template_path': 'D:/vimwiki/wiki_literature/html/template/', 'template_default': 'default', 'template_ext': '.html', 'auto_export': 1}]
 let g:vimwiki_browsers=['C:\Program Files\Mozilla Firefox\firefox.exe'] "用firefox来预览wiki
+
+"CSS换行插件
+map <leader>cp :CssPretty<CR>
