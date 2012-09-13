@@ -83,3 +83,7 @@ let g:vimwiki_browsers=['C:\Program Files\Mozilla Firefox\firefox.exe'] "用fire
 
 "CSS换行插件
 map <leader>cp :CssPretty<CR>
+
+"grepvim
+map <leader>c :copen<CR>
+map <leader>n :cn<CR>
