@@ -49,9 +49,10 @@ set cursorline "高亮当前行
 set cursorcolumn "高亮当前列
 set statusline=%h%=%-14.(%l,%c%V%)\ %<%p%%\ \ \ [%L]\ \ \ %{strftime('%y-%m-%d\ %A')}
 "hi CursorLine guibg=#FFFFC0
+set fenc=utf-8
 set encoding=utf-8 "设置编码
 set fileencodings=utf-8,gb2312,gbk,gb18030,latin-1 "设置文件编码
-set fileencodings=ucs-bom,utf-8,cp936
+"set fileencodings=ucs-bom,utf-8,cp936
 set fileencoding=utf-8
 set encoding=cp936  "同时支持GBK和UTF-8编码
 "colorscheme candy
@@ -105,6 +106,7 @@ let g:user_zen_expandabbr_key = '<c-j>'
 let g:use_zen_complete_tag = 1
 
 "vimwiki插件
+let g:vimwiki_w32_dir_enc = 'utf-8'
 nmap <F3> :Vimwiki2HTML<cr> "把当前wiki文件生成html
 nmap <F4> :VimwikiAll2HTML<cr> "把所有wiki文件生成html
 let g:vimwiki_camel_case = 0 "不要将驼峰式词组作为Wiki词条
