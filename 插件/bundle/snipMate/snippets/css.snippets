@@ -109,6 +109,12 @@ snippet h
 # color
 snippet c
 	color:${1:#CCC}${2:;}
+# overflow
+snippet oh
+	overflow:hidden;
+# z-index
+snippet zi
+	z-index:${1:9999}${2:;}
 # 标题右侧带有链接等
 snippet head-title
 	.head-title{
@@ -172,4 +178,216 @@ snippet ul-rate-list
 		white-space:nowrap;
 		width:70px;
 	}
-	
+# 用户头像列表	
+snippet ul-user-avatar
+	.user-avatar{
+		margin-right:-10px;
+	}
+	.user-avatar li,.user-avatar a strong{
+		width:56px;
+	}
+	.user-avatar li,.user-avatar li a{
+		display:inline;
+		float:left;
+	}
+	.user-avatar li{
+		margin:10px 10px 0 0;
+	}
+	.user-avatar img{
+		background-color:#FFF;
+		border:1px solid #CCC;
+		border-radius:3px;
+		height:50px;
+		padding:2px;
+		vertical-align:middle;
+		width:50px;
+	}
+	.user-avatar a strong{
+		display:block;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;		  
+		overflow: hidden;
+		white-space: nowrap;
+		height: 20px;
+		line-height:20px;
+		font-weight:normal;
+		text-align:center;
+	}
+# 图片标题列表
+snippet ul-img-title
+	.img-title li,.img-title li img,.img-title li strong{
+		width:225px;
+	}
+	.img-title{
+		margin-right:-15px;
+	}
+	.img-title li{
+		display:inline;
+		float:left;
+		margin:15px 15px 0 0;
+	}
+	.img-title li strong{
+		display:block;
+		font-weight:normal;
+		line-height:30px;
+		overflow: hidden;
+		text-align:center;
+		-o-text-overflow:ellipsis;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+	/* title-alpha */
+	.title-alpha li{
+		position:relative;
+	}
+	.title-alpha li strong{
+		background-color:rgba(0,0,0,.5);
+		color:#fff;
+		filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+		left:0;
+		padding:0 10px;
+		position:absolute;
+		text-align:left;
+		top:110px;
+		width:205px;
+	}
+# 图片文字垂直项目列表
+snippet ul-imgtext-v
+	.imgtext-v{
+		margin-right:-15px;
+	}
+	.imgtext-v li,.imgtext-v li h3{
+		width:130px;
+	}
+	.imgtext-v li{
+		display:inline;
+		float:left;
+		margin-top:15px;
+		margin-right:15px;
+	}
+	.imgtext-v li img{
+		height:130px;
+		width:130px;
+	}
+	.imgtext-v li h3{
+		font-weight:normal;
+		font-size:12px;
+		line-height:24px;
+	}
+	.short-title{
+		-o-text-overflow:ellipsis;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+# 图文混排水平列表 
+snippet imgtext-h
+	.imgtext-h{ 
+		border-bottom:1px dashed #D3D3D3;
+		padding-top:10px;
+		padding-bottom:10px; 
+		padding-left:210px; 
+	}
+	.imgtext-h h3{
+		font-size:14px; 
+	}
+	.imgtext-h .img-left{
+		display:inline;
+		float:left;
+		margin-left:-210px; 
+	}
+	.imgtext-h .img-left img{
+		height:140px; 
+		width:200px; 
+	}
+snippet ul-imgtext-h-block
+	.imgtext-h-block li{
+		border-bottom:1px dashed #D3D3D3; 
+		padding-top:10px; 
+		padding-bottom:10px; 
+	} 
+	.imgtext-h-block li.last,.imgtext-h-block li:last-child {
+		border-bottom:none;
+	}
+	.imgtext-h-block li,.imgtext-h-block .img-left,.imgtext-h-block .text-right{
+		display:inline;
+		float:left;
+	}
+	.imgtext-h-block .img-left,.imgtext-h-block .img-left img{
+		width:50px;
+	}
+	.imgtext-h-block .img-left img{
+		height:50px;
+	}
+	.imgtext-h-block .text-right,.imgtext-h-block h3{
+		width:100px; 
+	}
+	.imgtext-h-block .text-right{
+		margin-left:5px;
+	}
+	.imgtext-h-block h3{
+		font-size:12px;
+		font-weight:normal;
+		line-height:15px;
+	}
+	.short-title{
+		overflow: hidden;
+		-o-text-overflow:ellipsis;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+# 无缝滚动
+snippet carousel
+	.carousel{
+		position:relative;
+		*zoom:1;
+	}
+	.carousel .view-content{
+		height:156px;
+		margin:0 44px;
+		overflow:hidden;
+		width:860px; 
+	}
+	.carousel .view-content li{
+		display:inline;
+		float:left;
+		margin-right:15px; 
+		text-align:center;   
+		width:160px; 
+	}
+	.carousel li img{
+		border:1px solid #ccc;
+		height:116px;
+		vertical-align:bottom;
+		padding:4px;
+		width:150px;
+	}
+	.carousel li strong{
+		display:block;
+		height:30px;
+		line-height:30px;
+		-o-text-overflow:ellipsis;
+		overflow:hidden;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		width:160px; 
+	}
+	.carousel .prev-btn,.carousel .next-btn{
+		background:url(images/cont-btn-bg.gif) no-repeat;
+		cursor:pointer;
+		font-size:0;
+		height:80px;
+		line-height:0;
+		overflow:hidden;
+		position:absolute;
+		top:29px; 
+		width:30px; 
+	}
+	.carousel .prev-btn{
+		left:10px; 
+	}
+	.carousel .next-btn{
+		background-position:right top;
+		right:10px;
+	}
