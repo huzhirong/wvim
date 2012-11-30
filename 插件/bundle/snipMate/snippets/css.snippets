@@ -109,3 +109,67 @@ snippet h
 # color
 snippet c
 	color:${1:#CCC}${2:;}
+# 标题右侧带有链接等
+snippet head-title
+	.head-title{
+		line-height:30px;
+		text-align:right;
+	}
+	.head-title h2{
+		float:left;
+	}
+# 标题类列表
+snippet ul-title-list
+	.title-list li{
+		line-height:22px;
+	}
+	.title-list .title-link{ 
+		display:block;
+		text-overflow:ellipsis;
+		-o-text-overflow:ellipsis;
+		overflow: hidden;
+		width:300px;
+		white-space:nowrap;
+	}
+	.title-left li{
+		text-align:right;
+	}
+	.title-left .title-link{
+		display:inline;
+		float:left;
+		text-align:left;
+		width:226px;
+	}
+# 排行榜
+snippet ul-rate-list
+	.rate-list li{
+		border-bottom: 1px dashed #D3D3D3;
+		padding: 10px 0;
+		text-align:right;
+	}
+	.rate-list li.last,.rate-list li:last-child {
+		border-bottom:none;
+	}
+	.rate-list i{
+		background-color:#E5E5E5;
+		border-radius:3px;
+		display:inline;
+		float:left;
+		font-size:12px;
+		height:18px;
+		margin-right:6px;
+		overflow:hidden;
+		text-align:center;
+		width:16px;
+	}
+	.rate-list .title-link{
+		display:inline;
+		float:left;
+		-o-text-overflow:ellipsis;
+		overflow: hidden;
+		text-align:left;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		width:70px;
+	}
+	

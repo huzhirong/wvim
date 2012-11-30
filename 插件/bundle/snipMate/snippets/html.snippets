@@ -117,8 +117,6 @@ snippet head ALL
 	</head>
 snippet title
 	<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
-snippet firebug
-	<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
 snippet script
 	<script type="text/javascript" charset="utf-8">
 		${1}
@@ -223,3 +221,17 @@ snippet nav
 	<nav>
 		${1}
 	</nav>
+
+# 标题右侧带有链接等
+snippet head-title
+	.head-title.clearfix>h2+a.more
+# 标题类列表
+# 1.普通形式
+snippet ul-title-list 普通列表
+	ul.title-list>li>a.title-link
+# 2.右侧带有文字形式
+snippet ul-title-list 右侧带有文字形式
+	ul.title-list.title-left>li>a.title-link+span.grey
+# 排行榜
+snippet ul-rate-list
+	ul.rate-list>li>i+a.title-link+span.grey
