@@ -289,6 +289,15 @@ snippet ul-imgtext-h-block
 # 无缝滚动
 snippet carousel
 	.carousel>(.view-content>ul>li>a>img+strong)+a.prev-btn+a.next-btn
+# 图片滚动
+snippet imgslide
+	.imgslide>(.silde-view>ul.inline-style.clearfix>li*4>a>img)+(.slide-control>p.slide-title+.slide-bullet>a*4)+(.slide-prev-next>a.prev-btn+a.next-btn)
+# 等分三列
+snippet col-three
+	.col-three.clearfix>(.col>h2+.col-content)*3
+# tabs选项卡
+snippet tabs-nav
+	(h2.tabs-nav>a*3)+(.tabs-content-wrap>.tabs-content*3)
 # 展示所有的缩写
 snippet abbr
 	head-title         : .head-title.clearfix>h2+a.more
@@ -301,3 +310,6 @@ snippet abbr
 	imgtext-h          : .imgtext-h.clearfix>(a.img-left>img)+(.text-right>(h3>a)+p)
 	ul-imgtext-h-block : ul.imgtext-h-block.clearfix>li>(a.img-left>img)+(.text-right>(h3.short-title>a)+p)
 	carousel           : .carousel>(.view-content>ul>li>a>img+strong)+a.prev-btn+a.next-btn
+	imgslide           : .imgslide>(.silde-view>ul.inline-style.clearfix>li*4>a>img)+.slide-control>(p.slide-title+(.slide-bullet>a*4)+(.slide-prev-next>a.prev-btn+a.next-btn))
+	col-three          : .col-three.clearfix>(.col>h2+.col-content)*3
+	tabs-nav           : (h2.tabs-nav>a*3)+(.tabs-content-wrap>.tabs-content*3)
