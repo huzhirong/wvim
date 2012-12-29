@@ -28,6 +28,7 @@
   r.visualmark插件(http://www.vim.org/scripts/script.php?script_id=1026)，把visualmark.vim放到plugin文件夹里
   s.html_annoyance插件(http://www.vim.org/scripts/script.php?script_id=4192)，主要是用来去除a的连续的空白的
   t.csspretty插件(https://github.com/hotoo/csspretty.vim)，主要用来把一行css转换为多行css
+  u.delimitMate插件(http://www.vim.org/scripts/script.php?script_id=2754)，能够自动合并引号、双引号、括号等等
 
 "basic配置
 set go= "设置没有GUI界面
