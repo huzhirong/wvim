@@ -33,6 +33,37 @@
   x.HiCursorWords插件(http://www.vim.org/scripts/script.php?script_id=4306),把HiCursorWords.vim放到plugin文件夹里，高亮当前的单词
 
 "basic配置
+set nocompatible
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let eq = ''
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      let cmd = '""' . $VIMRUNTIME . '\diff"'
+      let eq = '"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+endfunction
+
+"basic配置
 set go= "设置没有GUI界面
 set number "显示行号
 set autoindent "使用对齐格式，也就是把当前行的的对齐格式应该到下一行。
@@ -121,5 +152,14 @@ let g:vimwiki_browsers=['C:\Program Files\Mozilla Firefox\firefox.exe'] "用fire
 map <leader>cp :CssPretty<CR>
 
 "grepvim
-map <leader>c :copen<CR>
-map <leader>n :cn<CR>
+"map <leader>c :copen<CR>
+"map <leader>n :cn<CR>
+
+"ctrlp
+map <leader>o :CtrlP<CR>
+let g:ctrlp_max_height = 20
+let g:ctrlp_working_path_mode = 'rw'
+
+map <F8> :%s/^\(\s*\)</\1'</g<CR>
+map <F9> :%s/>\(,\)\?\s*$/\>'\1/g<CR>
+map <F10> :%s/>'$/>',/g<CR>

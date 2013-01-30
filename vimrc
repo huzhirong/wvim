@@ -1,3 +1,33 @@
+set nocompatible
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let eq = ''
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      let cmd = '""' . $VIMRUNTIME . '\diff"'
+      let eq = '"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+endfunction
+
 "basic配置
 set go= "设置没有GUI界面
 set number "显示行号
@@ -79,7 +109,7 @@ let g:vimwiki_w32_dir_enc = 'utf-8'
 nmap <F3> :Vimwiki2HTML<cr> "把当前wiki文件生成html
 nmap <F4> :VimwikiAll2HTML<cr> "把所有wiki文件生成html
 let g:vimwiki_camel_case = 0 "不要将驼峰式词组作为Wiki词条
-let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre,input,textarea' "声明可以在wiki里面使用的HTML标签
+let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h4,h5,h6,pre' "声明可以在wiki里面使用的HTML标签
 let g:vimwiki_list = [{'path': 'D:/vimwiki/wiki_techno/', 'path_html': 'D:/vimwiki/wiki_techno/html/', 'template_path': 'D:/vimwiki/wiki_techno/html/template/', 'template_default': 'default', 'template_ext': '.html', 'auto_export': 1},{'path': 'D:/vimwiki/wiki_literature/', 'path_html': 'D:/vimwiki/wiki_literature/html/', 'template_path': 'D:/vimwiki/wiki_literature/html/template/', 'template_default': 'default', 'template_ext': '.html', 'auto_export': 1}]
 let g:vimwiki_browsers=['C:\Program Files\Mozilla Firefox\firefox.exe'] "用firefox来预览wiki
 
@@ -87,5 +117,14 @@ let g:vimwiki_browsers=['C:\Program Files\Mozilla Firefox\firefox.exe'] "用fire
 map <leader>cp :CssPretty<CR>
 
 "grepvim
-map <leader>c :copen<CR>
-map <leader>n :cn<CR>
+"map <leader>c :copen<CR>
+"map <leader>n :cn<CR>
+
+"ctrlp
+map <leader>o :CtrlP<CR>
+let g:ctrlp_max_height = 20
+let g:ctrlp_working_path_mode = 'rw'
+
+map <F8> :%s/^\(\s*\)</\1'</g<CR>
+map <F9> :%s/>\(,\)\?\s*$/\>'\1/g<CR>
+map <F10> :%s/>'$/>',/g<CR>

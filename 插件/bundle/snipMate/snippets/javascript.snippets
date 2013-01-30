@@ -91,6 +91,12 @@ snippet gett
 # Document
 snippet d
 	document
+# Object
+snippet o
+	Object
+# prototype
+snippet p
+	prototype
 # Get getElementById
 snippet getid
 	getElementById('${1}')${2}
@@ -116,6 +122,14 @@ snippet ctn
 	createTextNode(${1:value});
 snippet ce
 	createElement(${1:value});
+snippet try
+	try{
+		${1:statement}
+	}catch(${2:e}){
+		${3:throw e;}
+	}
+snippet to
+	typeof ${1:type}
 snippet javascript
 	----------------------
 	proto 	: 		fun
@@ -143,4 +157,8 @@ snippet javascript
 	cl      :       at
 	----------------------
 	ctn     :       ce
+	----------------------
+	p       :       o
+	----------------------
+	try     :       to
 	----------------------
