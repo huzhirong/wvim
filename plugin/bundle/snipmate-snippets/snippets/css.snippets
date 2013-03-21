@@ -1,967 +1,840 @@
 snippet .
-	${1} {
+	${1}{
 		${2}
 	}
 snippet !
 	 !important
-snippet bdi:m+
-	-moz-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
-snippet bdi:m
-	-moz-border-image: ${1};
-snippet bdrz:m
-	-moz-border-radius: ${1};
-snippet bxsh:m+
-	-moz-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
-snippet bxsh:m
-	-moz-box-shadow: ${1};
-snippet bdi:w+
-	-webkit-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
-snippet bdi:w
-	-webkit-border-image: ${1};
-snippet bdrz:w
-	-webkit-border-radius: ${1};
-snippet bxsh:w+
-	-webkit-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
-snippet bxsh:w
-	-webkit-box-shadow: ${1};
 snippet @f
-	@font-face {
-		font-family: ${1};
-		src: url(${2});
+	@font-face{
+		font-family:${1}${2:;}
+		src:url(${3})${4:;}
 	}
 snippet @i
-	@import url(${1});
+	@import url(${1})${2:;}
 snippet @m
-	@media ${1:print} {
+	@media ${1:print}{
 		${2}
 	}
 snippet bg+
-	background:${1:#FFF} url(${2}) ${3:0} ${4:0} ${5:no-repeat};
-snippet bga
-	background-attachment: ${1};
-snippet bga:f
-	background-attachment: fixed;
-snippet bga:s
-	background-attachment: scroll;
-snippet bgbk
-	background-break: ${1};
-snippet bgbk:bb
-	background-break: bounding-box;
-snippet bgbk:c
-	background-break: continuous;
-snippet bgbk:eb
-	background-break: each-box;
-snippet bgcp
-	background-clip: ${1};
-snippet bgcp:bb
-	background-clip: border-box;
-snippet bgcp:cb
-	background-clip: content-box;
-snippet bgcp:nc
-	background-clip: no-clip;
-snippet bgcp:pb
-	background-clip: padding-box;
-snippet bgc
-	background-color: #${1:FFF};
-snippet bgc:t
-	background-color: transparent;
-snippet bgi
-	background-image: url(${1});
-snippet bgi:n
-	background-image: none;
-snippet bgo
-	background-origin: ${1};
-snippet bgo:bb
-	background-origin: border-box;
-snippet bgo:cb
-	background-origin: content-box;
-snippet bgo:pb
-	background-origin: padding-box;
-snippet bgpx
-	background-position-x: ${1};
-snippet bgpy
-	background-position-y: ${1};
-snippet bgp
-	background-position: ${1:0} ${2:0};
-snippet bgr
-	background-repeat: ${1};
-snippet bgr:n
-	background-repeat: no-repeat;
-snippet bgr:x
-	background-repeat: repeat-x;
-snippet bgr:y
-	background-repeat: repeat-y;
-snippet bgr:r
-	background-repeat: repeat;
-snippet bgz
-	background-size: ${1};
-snippet bgz:a
-	background-size: auto;
-snippet bgz:ct
-	background-size: contain;
-snippet bgz:cv
-	background-size: cover;
+	background:${1:#FFF} url(${2}) ${3:0} ${4:0} ${5:no-repeat}${6:;}
 snippet bg
-	background: ${1};
+	background:${1}${2:;}
 snippet bg:ie
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1}',sizingMethod='${2:crop}');
-snippet bg:n
-	background: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1}',sizingMethod='${2:crop}')${3:;}
 snippet bd+
-	border: ${1:1px} ${2:solid} #${3:000};
-snippet bdb+
-	border-bottom: ${1:1px} ${2:solid} #${3:000};
-snippet bdbc
-	border-bottom-color: #${1:000};
-snippet bdbi
-	border-bottom-image: url(${1});
-snippet bdbi:n
-	border-bottom-image: none;
-snippet bdbli
-	border-bottom-left-image: url(${1});
-snippet bdbli:c
-	border-bottom-left-image: continue;
-snippet bdbli:n
-	border-bottom-left-image: none;
-snippet bdblrz
-	border-bottom-left-radius: ${1};
-snippet bdbri
-	border-bottom-right-image: url(${1});
-snippet bdbri:c
-	border-bottom-right-image: continue;
-snippet bdbri:n
-	border-bottom-right-image: none;
-snippet bdbrrz
-	border-bottom-right-radius: ${1};
-snippet bdbs
-	border-bottom-style: ${1};
-snippet bdbs:n
-	border-bottom-style: none;
-snippet bdbw
-	border-bottom-width: ${1};
-snippet bdb
-	border-bottom: ${1};
-snippet bdb:n
-	border-bottom: none;
-snippet bdbk
-	border-break: ${1};
-snippet bdbk:c
-	border-break: close;
-snippet bdcl
-	border-collapse: ${1};
-snippet bdcl:c
-	border-collapse: collapse;
-snippet bdcl:s
-	border-collapse: separate;
-snippet bdc
-	border-color: #${1:000};
-snippet bdci
-	border-corner-image: url(${1});
-snippet bdci:c
-	border-corner-image: continue;
-snippet bdci:n
-	border-corner-image: none;
-snippet bdf
-	border-fit: ${1};
-snippet bdf:c
-	border-fit: clip;
-snippet bdf:of
-	border-fit: overwrite;
-snippet bdf:ow
-	border-fit: overwrite;
-snippet bdf:r
-	border-fit: repeat;
-snippet bdf:sc
-	border-fit: scale;
-snippet bdf:sp
-	border-fit: space;
-snippet bdf:st
-	border-fit: stretch;
-snippet bdi
-	border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
-snippet bdi:n
-	border-image: none;
-snippet bdl+
-	border-left: ${1:1px} ${2:solid} #${3:000};
-snippet bdlc
-	border-left-color: #${1:000};
-snippet bdli
-	border-left-image: url(${1});
-snippet bdli:n
-	border-left-image: none;
-snippet bdls
-	border-left-style: ${1};
-snippet bdls:n
-	border-left-style: none;
-snippet bdlw
-	border-left-width: ${1};
-snippet bdl
-	border-left: ${1};
-snippet bdl:n
-	border-left: none;
-snippet bdlt
-	border-length: ${1};
-snippet bdlt:a
-	border-length: auto;
-snippet bdrz
-	border-radius: ${1};
-snippet bdr+
-	border-right: ${1:1px} ${2:solid} #${3:000};
-snippet bdrc
-	border-right-color: #${1:000};
-snippet bdri
-	border-right-image: url(${1});
-snippet bdri:n
-	border-right-image: none;
-snippet bdrs
-	border-right-style: ${1};
-snippet bdrs:n
-	border-right-style: none;
-snippet bdrw
-	border-right-width: ${1};
-snippet bdr
-	border-right: ${1};
-snippet bdr:n
-	border-right: none;
-snippet bdsp
-	border-spacing: ${1};
-snippet bds
-	border-style: ${1};
-snippet bds:ds
-	border-style: dashed;
-snippet bds:dtds
-	border-style: dot-dash;
-snippet bds:dtdtds
-	border-style: dot-dot-dash;
-snippet bds:dt
-	border-style: dotted;
-snippet bds:db
-	border-style: double;
-snippet bds:g
-	border-style: groove;
-snippet bds:h
-	border-style: hidden;
-snippet bds:i
-	border-style: inset;
-snippet bds:n
-	border-style: none;
-snippet bds:o
-	border-style: outset;
-snippet bds:r
-	border-style: ridge;
-snippet bds:s
-	border-style: solid;
-snippet bds:w
-	border-style: wave;
-snippet bdt+
-	border-top: ${1:1px} ${2:solid} #${3:000};
-snippet bdtc
-	border-top-color: #${1:000};
-snippet bdti
-	border-top-image: url(${1});
-snippet bdti:n
-	border-top-image: none;
-snippet bdtli
-	border-top-left-image: url(${1});
-snippet bdtli:c
-	border-corner-image: continue;
-snippet bdtli:n
-	border-corner-image: none;
-snippet bdtlrz
-	border-top-left-radius: ${1};
-snippet bdtri
-	border-top-right-image: url(${1});
-snippet bdtri:c
-	border-top-right-image: continue;
-snippet bdtri:n
-	border-top-right-image: none;
-snippet bdtrrz
-	border-top-right-radius: ${1};
-snippet bdts
-	border-top-style: ${1};
-snippet bdts:n
-	border-top-style: none;
-snippet bdtw
-	border-top-width: ${1};
-snippet bdt
-	border-top: ${1};
-snippet bdt:n
-	border-top: none;
-snippet bdw
-	border-width: ${1};
+	border:${1:1px} ${2:solid} ${3:#CCC}${4:;}
 snippet bd
-	border: ${1};
+	border:${1}${2:;}
 snippet bd:n
-	border: none;
+	border:none;
+snippet bdb
+	border-bottom:${1:1px} ${2:solid} ${3:#CCC}${4:;}
+snippet bdb:n
+	border-bottom:none;
+snippet bdl
+	border-left:${1:1px} ${2:solid} ${3:#CCC}${4:;}
+snippet bdl:n
+	border-left:none;
+snippet bdr
+	border-right:${1:1px} ${2:solid} ${3:#CCC}${4:;}
+snippet bdr:n
+	border-right:none;
+snippet bdt
+	border-top:${1:1px} ${2:solid} ${3:#CCC}${4:;}
+snippet bdt:n
+	border-top:none;
 snippet b
-	bottom: ${1};
-snippet b:a
-	bottom: auto;
-snippet bxsh+
-	box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
-snippet bxsh
-	box-shadow: ${1};
-snippet bxsh:n
-	box-shadow: none;
-snippet bxz
-	box-sizing: ${1};
-snippet bxz:bb
-	box-sizing: border-box;
-snippet bxz:cb
-	box-sizing: content-box;
-snippet cps
-	caption-side: ${1};
-snippet cps:b
-	caption-side: bottom;
-snippet cps:t
-	caption-side: top;
+	bottom:${1}${2:;}
 snippet cl
-	clear: ${1};
+	clear:${1};
 snippet cl:b
-	clear: both;
-snippet cl:l
-	clear: left;
-snippet cl:n
-	clear: none;
-snippet cl:r
-	clear: right;
-snippet cp
-	clip: ${1};
-snippet cp:a
-	clip: auto;
-snippet cp:r
-	clip: rect(${1:0} ${2:0} ${3:0} ${4:0});
+	clear:both;
 snippet c
-	color: #${1:000};
-snippet ct
-	content: ${1};
-snippet ct:a
-	content: attr(${1});
-snippet ct:cq
-	content: close-quote;
-snippet ct:c
-	content: counter(${1});
-snippet ct:cs
-	content: counters(${1});
-snippet ct:ncq
-	content: no-close-quote;
-snippet ct:noq
-	content: no-open-quote;
-snippet ct:n
-	content: normal;
-snippet ct:oq
-	content: open-quote;
-snippet coi
-	counter-increment: ${1};
-snippet cor
-	counter-reset: ${1};
+	color:${1:#000}${2:;}
 snippet cur
-	cursor: ${1};
-snippet cur:a
-	cursor: auto;
-snippet cur:c
-	cursor: crosshair;
+	cursor:${1};
 snippet cur:d
-	cursor: default;
-snippet cur:ha
-	cursor: hand;
-snippet cur:he
-	cursor: help;
-snippet cur:m
-	cursor: move;
+	cursor:default;
+snippet cur:h
+	cursor:hand;
 snippet cur:p
-	cursor: pointer;
-snippet cur:t
-	cursor: text;
+	cursor:pointer;
 snippet d
-	display: ${1};
-snippet d:mib
-	display: -moz-inline-box;
-snippet d:mis
-	display: -moz-inline-stack;
+	display:${1}${2:;}
 snippet d:b
-	display: block;
-snippet d:cp
-	display: compact;
+	display:block;
 snippet d:ib
-	display: inline-block;
+	display:inline-block;
 snippet d:itb
-	display: inline-table;
+	display:inline-table;
 snippet d:i
-	display: inline;
+	display:inline;
 snippet d:li
-	display: list-item;
+	display:list-item;
 snippet d:n
-	display: none;
-snippet d:ri
-	display: run-in;
-snippet d:tbcp
-	display: table-caption;
-snippet d:tbc
-	display: table-cell;
-snippet d:tbclg
-	display: table-column-group;
-snippet d:tbcl
-	display: table-column;
-snippet d:tbfg
-	display: table-footer-group;
-snippet d:tbhg
-	display: table-header-group;
-snippet d:tbrg
-	display: table-row-group;
-snippet d:tbr
-	display: table-row;
-snippet d:tb
-	display: table;
-snippet ec
-	empty-cells: ${1};
-snippet ec:h
-	empty-cells: hide;
-snippet ec:s
-	empty-cells: show;
-snippet exp
-	expression()
-snippet fl
-	float: ${1};
-snippet fl:l
-	float: left;
-snippet fl:n
-	float: none;
-snippet fl:r
-	float: right;
+	display:none;
+snippet ft
+	float:${1}${2:;}
+snippet ft:l
+	float:left;
+snippet ft:n
+	float:none;
+snippet ft:r
+	float:right;
 snippet f+
-	font: ${1:1em} ${2:Arial},${3:sans-serif};
-snippet fef
-	font-effect: ${1};
-snippet fef:eb
-	font-effect: emboss;
-snippet fef:eg
-	font-effect: engrave;
-snippet fef:n
-	font-effect: none;
-snippet fef:o
-	font-effect: outline;
-snippet femp
-	font-emphasize-position: ${1};
-snippet femp:a
-	font-emphasize-position: after;
-snippet femp:b
-	font-emphasize-position: before;
-snippet fems
-	font-emphasize-style: ${1};
-snippet fems:ac
-	font-emphasize-style: accent;
-snippet fems:c
-	font-emphasize-style: circle;
-snippet fems:ds
-	font-emphasize-style: disc;
-snippet fems:dt
-	font-emphasize-style: dot;
-snippet fems:n
-	font-emphasize-style: none;
-snippet fem
-	font-emphasize: ${1};
+	font:${1:1em} ${2:Arial},${3:sans-serif};
 snippet ff
-	font-family: ${1};
-snippet ff:c
-	font-family: ${1:'Monotype Corsiva','Comic Sans MS'},cursive;
-snippet ff:f
-	font-family: ${1:Capitals,Impact},fantasy;
-snippet ff:m
-	font-family: ${1:Monaco,'Courier New'},monospace;
+	font-family:${1}${2:;}
 snippet ff:ss
-	font-family: ${1:Helvetica,Arial},sans-serif;
+	font-family:${1:Helvetica,Arial},sans-serif;
 snippet ff:s
-	font-family: ${1:Georgia,'Times New Roman'},serif;
-snippet fza
-	font-size-adjust: ${1};
-snippet fza:n
-	font-size-adjust: none;
+	font-family:${1:Georgia,'Times New Roman'},serif;
 snippet fz
-	font-size: ${1};
-snippet fsm
-	font-smooth: ${1};
-snippet fsm:aw
-	font-smooth: always;
-snippet fsm:a
-	font-smooth: auto;
-snippet fsm:n
-	font-smooth: never;
-snippet fst
-	font-stretch: ${1};
-snippet fst:c
-	font-stretch: condensed;
-snippet fst:e
-	font-stretch: expanded;
-snippet fst:ec
-	font-stretch: extra-condensed;
-snippet fst:ee
-	font-stretch: extra-expanded;
-snippet fst:n
-	font-stretch: normal;
-snippet fst:sc
-	font-stretch: semi-condensed;
-snippet fst:se
-	font-stretch: semi-expanded;
-snippet fst:uc
-	font-stretch: ultra-condensed;
-snippet fst:ue
-	font-stretch: ultra-expanded;
+	font-size:${1}${2:;}
 snippet fs
-	font-style: ${1};
+	font-style:${1}${2:;}
 snippet fs:i
-	font-style: italic;
+	font-style:italic;
 snippet fs:n
-	font-style: normal;
-snippet fs:o
-	font-style: oblique;
-snippet fv
-	font-variant: ${1};
-snippet fv:n
-	font-variant: normal;
-snippet fv:sc
-	font-variant: small-caps;
+	font-style:normal;
 snippet fw
-	font-weight: ${1};
+	font-weight:${1}${2:;}
 snippet fw:b
-	font-weight: bold;
-snippet fw:br
-	font-weight: bolder;
-snippet fw:lr
-	font-weight: lighter;
+	font-weight:bold;
 snippet fw:n
-	font-weight: normal;
+	font-weight:normal;
 snippet f
-	font: ${1};
+	font:${1}${2:;}
 snippet h
-	height: ${1};
-snippet h:a
-	height: auto;
+	height:${1}${2:;}
 snippet l
-	left: ${1};
-snippet l:a
-	left: auto;
+	left:${1}${2:;}
 snippet lts
-	letter-spacing: ${1};
+	letter-spacing:${1}${2:;}
 snippet lh
-	line-height: ${1};
-snippet lisi
-	list-style-image: url(${1});
-snippet lisi:n
-	list-style-image: none;
-snippet lisp
-	list-style-position: ${1};
-snippet lisp:i
-	list-style-position: inside;
-snippet lisp:o
-	list-style-position: outside;
+	line-height:${1}${2:;}
 snippet list
-	list-style-type: ${1};
+	list-style-type:${1}${2:;}
 snippet list:c
-	list-style-type: circle;
+	list-style-type:circle;
 snippet list:dclz
-	list-style-type: decimal-leading-zero;
+	list-style-type:decimal-leading-zero;
 snippet list:dc
-	list-style-type: decimal;
+	list-style-type:decimal;
 snippet list:d
-	list-style-type: disc;
+	list-style-type:disc;
 snippet list:lr
-	list-style-type: lower-roman;
+	list-style-type:lower-roman;
 snippet list:n
-	list-style-type: none;
+	list-style-type:none;
 snippet list:s
-	list-style-type: square;
+	list-style-type:square;
 snippet list:ur
-	list-style-type: upper-roman;
+	list-style-type:upper-roman;
 snippet lis
-	list-style: ${1};
+	list-style:${1}${2:;}
 snippet lis:n
-	list-style: none;
+	list-style:none;
 snippet mb
-	margin-bottom: ${1};
-snippet mb:a
-	margin-bottom: auto;
+	margin-bottom:${1}${2:;}
 snippet ml
-	margin-left: ${1};
-snippet ml:a
-	margin-left: auto;
+	margin-left:${1}${2:;}
 snippet mr
-	margin-right: ${1};
-snippet mr:a
-	margin-right: auto;
+	margin-right:${1}${2:;}
 snippet mt
-	margin-top: ${1};
-snippet mt:a
-	margin-top: auto;
+	margin-top:${1}${2:;}
 snippet m
-	margin: ${1};
+	margin:${1}${2:;}
 snippet m:4
-	margin: ${1:0} ${2:0} ${3:0} ${4:0};
+	margin:${1:0} ${2:0} ${3:0} ${4:0}${5:;}
 snippet m:3
-	margin: ${1:0} ${2:0} ${3:0};
+	margin:${1:0} ${2:0} ${3:0}${4:;}
 snippet m:2
-	margin: ${1:0} ${2:0};
+	margin:${1:0} ${2:0}${3:;}
 snippet m:0
-	margin: 0;
-snippet m:a
-	margin: auto;
+	margin:0;
 snippet mah
-	max-height: ${1};
-snippet mah:n
-	max-height: none;
+	max-height:${1}${2:;}
 snippet maw
-	max-width: ${1};
-snippet maw:n
-	max-width: none;
+	max-width:${1}${2:;}
 snippet mih
-	min-height: ${1};
+	min-height:${1}${2:;}
 snippet miw
-	min-width: ${1};
+	min-width:${1}${2:;}
 snippet op
-	opacity: ${1};
+	opacity:${1}${2:;}
 snippet op:ie
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100});
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100});
 snippet op:ms
-	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100})';
-snippet orp
-	orphans: ${1};
-snippet o+
-	outline: ${1:1px} ${2:solid} #${3:000};
-snippet oc
-	outline-color: ${1:#000};
-snippet oc:i
-	outline-color: invert;
-snippet oo
-	outline-offset: ${1};
-snippet os
-	outline-style: ${1};
-snippet ow
-	outline-width: ${1};
-snippet o
-	outline: ${1};
-snippet o:n
-	outline: none;
-snippet ovs
-	overflow-style: ${1};
-snippet ovs:a
-	overflow-style: auto;
-snippet ovs:mq
-	overflow-style: marquee;
-snippet ovs:mv
-	overflow-style: move;
-snippet ovs:p
-	overflow-style: panner;
-snippet ovs:s
-	overflow-style: scrollbar;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100})';
 snippet ovx
-	overflow-x: ${1};
-snippet ovx:a
-	overflow-x: auto;
+	overflow-x:${1}${2:;}
 snippet ovx:h
-	overflow-x: hidden;
+	overflow-x:hidden;
 snippet ovx:s
-	overflow-x: scroll;
-snippet ovx:v
-	overflow-x: visible;
+	overflow-x:scroll;
 snippet ovy
-	overflow-y: ${1};
-snippet ovy:a
-	overflow-y: auto;
+	overflow-y:${1}${2:;}
 snippet ovy:h
-	overflow-y: hidden;
+	overflow-y:hidden;
 snippet ovy:s
-	overflow-y: scroll;
-snippet ovy:v
-	overflow-y: visible;
+	overflow-y:scroll;
 snippet ov
-	overflow: ${1};
-snippet ov:a
-	overflow: auto;
+	overflow:${1}${2:;}
 snippet ov:h
-	overflow: hidden;
+	overflow:hidden;
 snippet ov:s
-	overflow: scroll;
+	overflow:scroll;
 snippet ov:v
-	overflow: visible;
+	overflow:visible;
 snippet pb
-	padding-bottom: ${1};
+	padding-bottom:${1}${2:;}
 snippet pl
-	padding-left: ${1};
+	padding-left:${1}${2:;}
 snippet pr
-	padding-right: ${1};
+	padding-right:${1}${2:;}
 snippet pt
-	padding-top: ${1};
+	padding-top:${1}${2:;}
 snippet p
-	padding: ${1};
+	padding:${1}${2:;}
 snippet p:4
-	padding: ${1:0} ${2:0} ${3:0} ${4:0};
+	padding:${1:0} ${2:0} ${3:0} ${4:0}${5:;}
 snippet p:3
-	padding: ${1:0} ${2:0} ${3:0};
+	padding:${1:0} ${2:0} ${3:0}${4:;}
 snippet p:2
-	padding: ${1:0} ${2:0};
+	padding:${1:0} ${2:0}${3:;}
 snippet p:0
-	padding: 0;
-snippet pgba
-	page-break-after: ${1};
-snippet pgba:aw
-	page-break-after: always;
-snippet pgba:a
-	page-break-after: auto;
-snippet pgba:l
-	page-break-after: left;
-snippet pgba:r
-	page-break-after: right;
-snippet pgbb
-	page-break-before: ${1};
-snippet pgbb:aw
-	page-break-before: always;
-snippet pgbb:a
-	page-break-before: auto;
-snippet pgbb:l
-	page-break-before: left;
-snippet pgbb:r
-	page-break-before: right;
-snippet pgbi
-	page-break-inside: ${1};
-snippet pgbi:a
-	page-break-inside: auto;
-snippet pgbi:av
-	page-break-inside: avoid;
+	padding:0;
 snippet pos
-	position: ${1};
+	position:${1}${2:;}
 snippet pos:a
-	position: absolute;
+	position:absolute;
 snippet pos:f
-	position: fixed;
+	position:fixed;
 snippet pos:r
-	position: relative;
+	position:relative;
 snippet pos:s
-	position: static;
-snippet q
-	quotes: ${1};
-snippet q:en
-	quotes: '\201C' '\201D' '\2018' '\2019';
-snippet q:n
-	quotes: none;
-snippet q:ru
-	quotes: '\00AB' '\00BB' '\201E' '\201C';
-snippet rz
-	resize: ${1};
-snippet rz:b
-	resize: both;
-snippet rz:h
-	resize: horizontal;
-snippet rz:n
-	resize: none;
-snippet rz:v
-	resize: vertical;
+	position:static;
 snippet r
-	right: ${1};
-snippet r:a
-	right: auto;
-snippet tbl
-	table-layout: ${1};
-snippet tbl:a
-	table-layout: auto;
-snippet tbl:f
-	table-layout: fixed;
-snippet tal
-	text-align-last: ${1};
-snippet tal:a
-	text-align-last: auto;
-snippet tal:c
-	text-align-last: center;
-snippet tal:l
-	text-align-last: left;
-snippet tal:r
-	text-align-last: right;
+	right:${1}${2:;}
 snippet ta
-	text-align: ${1};
+	text-align:${1}${2:;}
 snippet ta:c
-	text-align: center;
+	text-align:center;
 snippet ta:l
-	text-align: left;
+	text-align:left;
 snippet ta:r
-	text-align: right;
+	text-align:right;
 snippet td
-	text-decoration: ${1};
-snippet td:l
-	text-decoration: line-through;
+	text-decoration:${1}${2:;}
 snippet td:n
 	text-decoration: none;
-snippet td:o
-	text-decoration: overline;
 snippet td:u
 	text-decoration: underline;
-snippet te
-	text-emphasis: ${1};
-snippet te:ac
-	text-emphasis: accent;
-snippet te:a
-	text-emphasis: after;
-snippet te:b
-	text-emphasis: before;
-snippet te:c
-	text-emphasis: circle;
-snippet te:ds
-	text-emphasis: disc;
-snippet te:dt
-	text-emphasis: dot;
-snippet te:n
-	text-emphasis: none;
-snippet th
-	text-height: ${1};
-snippet th:a
-	text-height: auto;
-snippet th:f
-	text-height: font-size;
-snippet th:m
-	text-height: max-size;
-snippet th:t
-	text-height: text-size;
 snippet ti
-	text-indent: ${1};
+	text-indent:${1}${2:;}
 snippet ti:-
-	text-indent: -9999px;
+	text-indent:-9999px;
 snippet tj
-	text-justify: ${1};
-snippet tj:a
-	text-justify: auto;
-snippet tj:d
-	text-justify: distribute;
-snippet tj:ic
-	text-justify: inter-cluster;
-snippet tj:ii
-	text-justify: inter-ideograph;
-snippet tj:iw
-	text-justify: inter-word;
-snippet tj:k
-	text-justify: kashida;
-snippet tj:t
-	text-justify: tibetan;
-snippet to+
-	text-outline: ${1:0} ${2:0} #${3:000};
-snippet to
-	text-outline: ${1};
-snippet to:n
-	text-outline: none;
-snippet tr
-	text-replace: ${1};
-snippet tr:n
-	text-replace: none;
+	text-justify:${1}${2:;}
 snippet tsh+
-	text-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
+	text-shadow:${1:0} ${2:0} ${3:0} #${4:000}${5:;}
 snippet tsh
-	text-shadow: ${1};
+	text-shadow:${1};
 snippet tsh:n
-	text-shadow: none;
+	text-shadow:none;
 snippet tt
-	text-transform: ${1};
+	text-transform:${1}${2:;}
 snippet tt:c
-	text-transform: capitalize;
+	text-transform:capitalize;
 snippet tt:l
-	text-transform: lowercase;
+	text-transform:lowercase;
 snippet tt:n
-	text-transform: none;
+	text-transform:none;
 snippet tt:u
-	text-transform: uppercase;
-snippet tw
-	text-wrap: ${1};
-snippet tw:no
-	text-wrap: none;
-snippet tw:n
-	text-wrap: normal;
-snippet tw:s
-	text-wrap: suppress;
-snippet tw:u
-	text-wrap: unrestricted;
+	text-transform:uppercase;
 snippet t
-	top: ${1};
-snippet t:a
-	top: auto;
+	top:${1}${2:;}
 snippet va
-	vertical-align: ${1};
-snippet va:bl
-	vertical-align: baseline;
+	vertical-align:${1}${2:;}
 snippet va:b
-	vertical-align: bottom;
+	vertical-align:bottom;
 snippet va:m
-	vertical-align: middle;
-snippet va:sub
-	vertical-align: sub;
-snippet va:sup
-	vertical-align: super;
-snippet va:tb
-	vertical-align: text-bottom;
-snippet va:tt
-	vertical-align: text-top;
+	vertical-align:middle;
 snippet va:t
-	vertical-align: top;
-snippet v
-	visibility: ${1};
-snippet v:c
-	visibility: collapse;
-snippet v:h
-	visibility: hidden;
-snippet v:v
-	visibility: visible;
-snippet whsc
-	white-space-collapse: ${1};
-snippet whsc:ba
-	white-space-collapse: break-all;
-snippet whsc:bs
-	white-space-collapse: break-strict;
-snippet whsc:k
-	white-space-collapse: keep-all;
-snippet whsc:l
-	white-space-collapse: loose;
-snippet whsc:n
-	white-space-collapse: normal;
+	vertical-align:top;
 snippet whs
-	white-space: ${1};
+	white-space:${1}${2:;}
 snippet whs:n
-	white-space: normal;
+	white-space:normal;
 snippet whs:nw
-	white-space: nowrap;
-snippet whs:pl
-	white-space: pre-line;
-snippet whs:pw
-	white-space: pre-wrap;
+	white-space:nowrap;
 snippet whs:p
-	white-space: pre;
-snippet wid
-	widows: ${1};
+	white-space:pre;
 snippet w
-	width: ${1};
-snippet w:a
-	width: auto;
+	width:${1}${2:;}
 snippet wob
-	word-break: ${1};
+	word-break:${1}${2:;}
 snippet wob:ba
-	word-break: break-all;
+	word-break:break-all;
 snippet wob:bs
-	word-break: break-strict;
+	word-break:break-strict;
 snippet wob:k
-	word-break: keep-all;
-snippet wob:l
-	word-break: loose;
-snippet wob:n
-	word-break: normal;
+	word-break:keep-all;
 snippet wos
-	word-spacing: ${1};
+	word-spacing:${1}${2:;}
 snippet wow
-	word-wrap: ${1};
-snippet wow:no
-	word-wrap: none;
-snippet wow:n
-	word-wrap: normal;
-snippet wow:s
-	word-wrap: suppress;
-snippet wow:u
-	word-wrap: unrestricted;
+	word-wrap:${1}${2:;}
 snippet z
-	z-index: ${1};
-snippet z:a
-	z-index: auto;
+	z-index:${1}${2:;}
 snippet zoo
-	zoom: 1;
+	zoom:1;
+
+# 标题右侧带有链接等
+snippet head-title
+	.head-title{
+		line-height:30px;
+		text-align:right;
+	}
+	.head-title h2{
+		float:left;
+	}
+# 标题类列表
+snippet ul-title-list
+	.title-list li{
+		line-height:22px;
+	}
+	.title-list .title-link{ 
+		display:block;
+		text-overflow:ellipsis;
+		-o-text-overflow:ellipsis;
+		overflow: hidden;
+		width:300px;
+		white-space:nowrap;
+	}
+	.title-left li{
+		text-align:right;
+	}
+	.title-left .title-link{
+		display:inline;
+		float:left;
+		text-align:left;
+		width:226px;
+	}
+# 排行榜
+snippet ul-rate-list
+	.rate-list li{
+		border-bottom: 1px dashed #D3D3D3;
+		padding: 10px 0;
+		text-align:right;
+	}
+	.rate-list li.last,.rate-list li:last-child {
+		border-bottom:none;
+	}
+	.rate-list i{
+		background-color:#E5E5E5;
+		border-radius:3px;
+		display:inline;
+		float:left;
+		font-size:12px;
+		height:18px;
+		margin-right:6px;
+		overflow:hidden;
+		text-align:center;
+		width:16px;
+	}
+	.rate-list .title-link{
+		display:inline;
+		float:left;
+		-o-text-overflow:ellipsis;
+		overflow: hidden;
+		text-align:left;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		width:70px;
+	}
+# 用户头像列表	
+snippet ul-user-avatar
+	.user-avatar{
+		margin-right:-10px;
+	}
+	.user-avatar li,.user-avatar a strong{
+		width:56px;
+	}
+	.user-avatar li,.user-avatar li a{
+		display:inline;
+		float:left;
+	}
+	.user-avatar li{
+		margin:10px 10px 0 0;
+	}
+	.user-avatar img{
+		background-color:#FFF;
+		border:1px solid #CCC;
+		border-radius:3px;
+		height:50px;
+		padding:2px;
+		vertical-align:middle;
+		width:50px;
+	}
+	.user-avatar a strong{
+		display:block;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;		  
+		overflow: hidden;
+		white-space: nowrap;
+		height: 20px;
+		line-height:20px;
+		font-weight:normal;
+		text-align:center;
+	}
+# 图片标题列表
+snippet ul-img-title
+	.img-title li,.img-title li img,.img-title li strong{
+		width:225px;
+	}
+	.img-title{
+		margin-right:-15px;
+	}
+	.img-title li{
+		display:inline;
+		float:left;
+		margin:15px 15px 0 0;
+	}
+	.img-title li strong{
+		display:block;
+		font-weight:normal;
+		line-height:30px;
+		overflow: hidden;
+		text-align:center;
+		-o-text-overflow:ellipsis;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+	.title-alpha li{
+		position:relative;
+	}
+	.title-alpha li strong{
+		background-color:rgba(0,0,0,.5);
+		color:#fff;
+		filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+		left:0;
+		padding:0 10px;
+		position:absolute;
+		text-align:left;
+		top:110px;
+		width:205px;
+	}
+# 图片文字垂直项目列表
+snippet ul-imgtext-v
+	.imgtext-v{
+		margin-right:-15px;
+	}
+	.imgtext-v li,.imgtext-v li h3{
+		width:130px;
+	}
+	.imgtext-v li{
+		display:inline;
+		float:left;
+		margin-top:15px;
+		margin-right:15px;
+	}
+	.imgtext-v li img{
+		height:130px;
+		width:130px;
+	}
+	.imgtext-v li h3{
+		font-weight:normal;
+		font-size:12px;
+		line-height:24px;
+	}
+	.short-title{
+		-o-text-overflow:ellipsis;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+# 图文混排水平列表 
+snippet imgtext-h
+	.imgtext-h{ 
+		border-bottom:1px dashed #D3D3D3;
+		padding-top:10px;
+		padding-bottom:10px; 
+		padding-left:210px; 
+	}
+	.imgtext-h h3{
+		font-size:14px; 
+	}
+	.imgtext-h .img-left{
+		display:inline;
+		float:left;
+		margin-left:-210px; 
+	}
+	.imgtext-h .img-left img{
+		height:140px; 
+		width:200px; 
+	}
+snippet ul-imgtext-h-block
+	.imgtext-h-block li{
+		border-bottom:1px dashed #D3D3D3; 
+		padding-top:10px; 
+		padding-bottom:10px; 
+	} 
+	.imgtext-h-block li.last,.imgtext-h-block li:last-child {
+		border-bottom:none;
+	}
+	.imgtext-h-block li,.imgtext-h-block .img-left,.imgtext-h-block .text-right{
+		display:inline;
+		float:left;
+	}
+	.imgtext-h-block .img-left,.imgtext-h-block .img-left img{
+		width:50px;
+	}
+	.imgtext-h-block .img-left img{
+		height:50px;
+	}
+	.imgtext-h-block .text-right,.imgtext-h-block h3{
+		width:100px; 
+	}
+	.imgtext-h-block .text-right{
+		margin-left:5px;
+	}
+	.imgtext-h-block h3{
+		font-size:12px;
+		font-weight:normal;
+		line-height:15px;
+	}
+	.short-title{
+		overflow: hidden;
+		-o-text-overflow:ellipsis;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+# 无缝滚动
+snippet carousel
+	.carousel{
+		position:relative;
+		*zoom:1;
+	}
+	.carousel .view-content{
+		height:156px;
+		margin:0 44px;
+		overflow:hidden;
+		width:860px; 
+	}
+	.carousel .view-content li{
+		display:inline;
+		float:left;
+		margin-right:15px; 
+		text-align:center;   
+		width:160px; 
+	}
+	.carousel li img{
+		border:1px solid #ccc;
+		height:116px;
+		vertical-align:bottom;
+		padding:4px;
+		width:150px;
+	}
+	.carousel li strong{
+		display:block;
+		height:30px;
+		line-height:30px;
+		-o-text-overflow:ellipsis;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		width:160px; 
+	}
+	.carousel .prev-btn,.carousel .next-btn{
+		background:url(images/cont-btn-bg.gif) no-repeat;
+		cursor:pointer;
+		font-size:0;
+		height:80px;
+		line-height:0;
+		overflow:hidden;
+		position:absolute;
+		top:29px; 
+		width:30px; 
+	}
+	.carousel .prev-btn{
+		left:10px; 
+	}
+	.carousel .next-btn{
+		background-position:right top;
+		right:10px;
+	}
+# 图片滚动
+snippet imgslide
+	.imgslide{
+		position:relative;
+	}
+	.imgslide .slide-view{
+		height:300px;
+		overflow:hidden;
+		width:550px; 
+	}
+	.imgslide .slide-view ul{
+		width:2200px; 
+	}
+	.imgslide .slide-control{
+		background-color:rgba(0,0,0,.5);
+		bottom:0;
+		filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+		height:36px;
+		left:0;
+		line-height:36px;
+		position:absolute;
+		width:550px;
+	}
+	.imgslide .slide-title a{
+		color:#fff;
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+		overflow: hidden;
+		-o-text-overflow:ellipsis;
+		padding-left:10px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		width:420px; 
+	}
+	.imgslide .slide-bullet{
+		bottom:10px;
+		right:10px;
+		position:absolute;
+	}
+	.imgslide .slide-bullet a{
+		background:url() no-repeat;
+		cursor:pointer;
+		display:inline;
+		float:left;
+		height:15px;
+		margin-right:5px;
+		overflow:hidden;
+		text-indent:-9999px;
+		width:13px;
+	}
+	.imgslide .slide-bullet a.active, .imgslide .slide-bullet a:hover {
+		background-position:0 -15px;
+	}
+	.imgslide .prev-btn, .imgslide .next-btn{
+		background:url() no-repeat;
+		cursor:pointer;
+		height:36px; 
+		position:absolute;
+		top:132px; 
+		width:32px;
+	}
+	.imgslide .prev-btn{
+		left:0;
+	}
+	.imgslide .next-btn{
+		background-position:0 -36px;
+		right:0;
+	}
+# 等分三列
+snippet col-three
+	.col{
+		float:left;
+		display:inline;
+	}
+	.col-three{
+		margin-right:-15px;
+	}
+	.col-three .col{
+		width:310px;
+		margin-right:15px;
+	}
+# tabs选项卡
+snippet tabs-nav
+	.tabs-color a{ 
+		background-color:#E5E5E5;
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+		font-size:14px;
+		height:36px;
+		line-height:36px;
+		text-align:center;
+		width:50%;
+	}
+	.tabs-color a.active{
+		background:#FFF;
+	}
+	.tabs-border-full a{
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+		text-align:center;
+		border-left:none;
+		width: 125px;
+		line-height:36px;
+		height:36px;
+		border:1px solid #E5E5E5;
+	}
+	.tabs-border-full a.last{
+		width:126px;
+		border-right:none;
+	}
+	.tabs-border-full a:hover {
+		border-top-color:#007AC0;
+	}
+	.tabs-border-full a.active {
+		border-top-color:#007AC0;
+		border-bottom-color:#FFF;
+	}
+	.tabs-border{
+		height:31px;
+		border-bottom:1px solid #E5E5E5;
+		font-weight:normal;
+	}
+	.tabs-border a{
+		margin-bottom:-1px;
+		position:relative;
+		margin-right:10px;
+		line-height:30px;
+		height:30px;
+		padding:0 15px;
+		float:left;
+		display:inline;
+		border:1px solid #E5E5E5;
+		background-color:#E5E5E5;
+		color:#333;
+	}
+	.tabs-border a.active{
+		border-bottom:1px solid #FFF;
+		background-color:#FFF;
+	}
+# css基础样式
+snippet base
+	@charset "utf-8";
+	/* CSS Document */
+	/* CSS Reset */
+	html{background:#FFF;}
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+	table{border-collapse:collapse;border-spacing:0;}
+	fieldset,img{border:0;}
+	address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+	del,ins{text-decoration:none;}
+	ul,li{list-style-type:none;}
+	caption,th{text-align:left;}
+	h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+	q:before,q:after{content:'';}
+	abbr,acronym{border:0;font-variant:normal;}
+	sup,sub{vertical-align:baseline;}
+	legend{color:#000;}
+	input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+	a{text-decoration:none;}
+	body{font-size:12px;font-family:"宋体";}
+
+	/*文字排版*/
+	.f12{font-size:12px;}
+	.f13{font-size:13px;}
+	.f14{font-size:14px;}
+	.f16{font-size:16px;}
+	.f18{font-size:18px;}
+	.f20{font-size:20px;}
+	.fb{font-weight:bold;}
+	.fn{font-weight:normal;}
+	.ti2{text-indent:2em;}
+	.lh150{line-height:150%;}
+	.lh180{line-height:180%;}
+	.lh200{line-height:200%;}
+	.tdu{text-decoration:underline;}
+	.tdn{text-decoration:none;}
+
+	/*定位*/
+	.tal{text-align:left;}
+	.tar{text-align:right;}
+	.tac{text-align:center;}
+	.fl{float:left;display:inline;}
+	.fr{float:right;display:inline;}
+	.cl{clear:both;}
+	.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.clearfix{zoom:1;}
+	.psr{position:relative;}
+	.psa{position:absolute;}
+	.zoom{zoom:1;}
+	.dn{display:none;}
+
+	/*长度高度*/
+	.w50{width:50;}
+	.w100{width:100px;}
+	.w150{width:150px;}
+	.w200{width:200px;}
+	.w250{width:250px;}
+	.w300{width:300px;}
+	.w400{width:400px;}
+	.w500{width:500px;}
+
+	.h50{height:50px;}
+	.h100{height:100px;}
+	.h200{height:200px;}
+	.h300{height:300px;}
+
+	/*边距*/
+	.m5{margin:5px;}
+	.m10{margin:10px;}
+	.m15{margin:15px;}
+	.m20{margin:20px;}
+
+	.mt5{margin-top:5px;}
+	.mt10{margin-top:10px;}
+	.mt15{margin-top:15px;}
+	.mt20{margin-top:20px;}
+
+	.mb5{margin-bottom:5px;}
+	.mb10{margin-bottom:10px;}
+	.mb15{margin-bottom:15px;}
+	.mb20{margin-bottom:20px;}
+
+	.mr5{margin-right:5px;}
+	.mr10{margin-right:10px;}
+	.mr15{margin-right:15px;}
+	.mr20{margin-right:20px;}
+
+	.ml5{margin-left:5px;}
+	.ml10{margin-left:10px;}
+	.ml15{margin-left:15px;}
+	.ml20{margin-left:20px;}
+
+	.p5{padding:5px;}
+	.p10{padding:10px;}
+	.p15{padding:15px;}
+	.p20{padding:20px;}
+
+	.pt5{padding-top:5px;}
+	.pt10{padding-top:10px;}
+	.pt15{padding-top:15px;}
+	.pt20{padding-top:20px;}
+
+	.pb5{padding-bottom:5px;}
+	.pb10{padding:-bottom:10px;}
+	.pb15{padding:-bottom:15px;}
+	.pb20{padding:-bottom:20px;}
+
+	.pr5{padding:-right:5px;}
+	.pr10{padding:-right:10px;}
+	.pr15{padding:-right:15px;}
+	.pr20{padding:-right:20px;}
+
+	.pl5{padding:-left:5px;}
+	.pl10{padding:-left:10px;}
+	.pl15{padding:-left:15px;}
+	.pl20{padding:-left:20px;}
+# 展示所有的缩写
+snippet abbreviate
+	.head-title
+	.ul-title-list
+	.ul-rate-list
+	.ul-user-avatar
+	.ul-img-title
+	.ul-imgtext-v
+	.imgtext-h
+	.ul-imgtext-h-block
+	.carousel
+	.imgslide
+	.col-three
+	.tabs-nav
+	.base
